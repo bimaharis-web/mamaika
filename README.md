@@ -67,9 +67,11 @@ dapat diakses melalui HTTPS agar preview WhatsApp bekerja dengan baik.
 ## Deployment ke GitHub Pages
 
 1. Jalankan `npm install` lalu `npm run build`.
-2. Commit dan push folder `review/` hasil build ke branch `main`.
-3. GitHub Pages harus menerbitkan branch `main` dari root repositori.
-4. Halaman tersedia pada `https://mamaika.my.id/review/` jika domain di `CNAME`
+2. Pastikan file `.nojekyll` di root repositori ikut dipush agar GitHub Pages
+   menyajikan aset Next.js di folder `_next`.
+3. Commit dan push folder `review/` hasil build ke branch `main`.
+4. GitHub Pages harus menerbitkan branch `main` dari root repositori.
+5. Halaman tersedia pada `https://mamaika.my.id/review/` jika domain di `CNAME`
    terhubung ke GitHub Pages.
 
 Output juga dapat di-deploy ke Vercel sebagai static export. Tetapkan
